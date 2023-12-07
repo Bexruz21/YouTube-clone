@@ -1,0 +1,202 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 20px;
+}
+
+.detail__header video {
+    border-radius: 20px;
+    width: 100%;
+}
+.detail__title {
+    font-size: 20px;
+}
+
+.detail__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.detail__item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.detail__author img {
+    border-radius: 50%;
+}
+
+.detail__subscribe {
+    background-color: #0f0f0f;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.detail__subscribe:hover {
+    opacity: .9;
+}
+
+.detail__subscribes {
+    font-size: 14px;
+}
+
+.detail__likes {
+    display: flex;
+    align-items: center;
+}
+
+.detail__like, .detail__dislike {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.detail__like {
+    background-color: #f2f2f2;
+    border-right: 1px solid rgb(188, 188, 188);
+    padding: 10px 25px 10px 15px;
+    border-radius: 50px 0px 0px 50px;
+}
+.detail__like:hover, .detail__dislike:hover {
+    background-color: #ebebeb;
+}
+.detail__dislike {
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 0 50px 50px 0;
+}
+.detail__share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.detail__share-active {
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.detail__share-active p, .detail__share-active path {
+    color: white;
+}
+
+.detail__description {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.detail__description:hover {
+    background-color: #ebebeb;
+}
+.detail__description__header {
+    color: #0f0f0f;
+    font-weight: bolder;
+}
+.detail__descripton__content {
+    margin-top: 10px;
+}
+
+.detail__form {
+    display: flex;
+    gap: 20px;
+}
+.detail__form__author img {
+    border-radius: 50%;
+}
+.detail__form__input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.detail__form__input input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #b9b9b9;
+    padding-bottom: 5px;
+    font-size: 15px;
+    transition: .5s all;
+}
+.detail__form__input input:focus {
+    border-bottom: 2px solid #0f0f0f;
+}
+.detail__form__input-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    align-items: center;
+}
+.detail__form__input-cancel {
+    padding: 10px 15px;
+    color: black;
+    border-radius: 30px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+}
+.detail__form__input-cancel:hover {
+    background-color: #ebebeb;
+}
+.detail__form__input-submit {
+    padding: 10px 15px;
+    color: white;
+    background-color: #065fd4;
+    border-radius: 30px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.detail__form__input-submit:hover {
+    background-color: #0357c6;
+}
+.detail__comments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.detail__comment {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 20px 0px;
+}
+.detail__comment__image img {
+    border-radius: 50%;
+}
+.detail__comment__content-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.detail__comment__date {
+    color: #606060;
+}
+
+
+@media screen and (max-width:1024px) {
+    .detail {
+        flex: 3 3;
+    }
+}

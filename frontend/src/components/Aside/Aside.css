@@ -1,0 +1,18 @@
+.aside {
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 3;
+}
+.aside__item {
+    padding: 15px 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.aside__item:hover {
+    background-color: #f2f2f2;
+}
